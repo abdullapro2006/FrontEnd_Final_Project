@@ -1,0 +1,71 @@
+@import url("https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@0;1&family=Open+Sans:wght@300&display=swap");
+* {
+  font-family: "Inclusive Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: whitesmoke;
+}
+
+.container {
+  width: 400%;
+  max-width: 1200px;
+}
+
+header {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+  z-index: 999;
+  background-color: #C4C2C2;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  height: 65px;
+}
+header .header-right {
+  padding-top: 12px;
+  display: flex;
+  gap: 16px;
+  margin-left: 22px;
+}
+header .header-right .phone {
+  margin-left: 12px;
+}
+header .header-right p {
+  position: relative;
+  bottom: 3px;
+  color: black;
+}
+header .header-right .content {
+  display: flex;
+  margin-left: 490px;
+}
+header .header-right .content p {
+  font-size: 5px;
+  color: black;
+}
+header .header-right .language {
+  display: flex;
+  margin-left: 600px;
+}
+
+.about {
+  display: flex;
+  margin-top: 30px;
+  margin-left: 50px;
+  gap: 16px;
+}
+.about input {
+  opacity: 5px;
+  margin-left: 800px;
+}/*# sourceMappingURL=main.css.map */

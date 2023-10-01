@@ -1,0 +1,306 @@
+@import url("https://fonts.googleapis.com/css2?family=Inclusive+Sans:ital@0;1&family=Open+Sans:wght@300&display=swap");
+* {
+  font-family: "Inclusive Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.custom-container {
+  padding: 26px 48px;
+  background-color: rgb(227, 227, 227);
+}
+.custom-container .top-bar {
+  display: flex;
+  justify-content: space-between;
+}
+.custom-container .top-bar .bar-icons ul {
+  list-style: none;
+  display: flex;
+}
+.custom-container .top-bar .bar-icons ul li {
+  margin-right: 8px;
+}
+.custom-container .top-bar .bar-icons ul li a {
+  text-decoration: none;
+}
+.custom-container .top-bar .bar-icons ul li a:hover {
+  color: #bcac76;
+}
+.custom-container .top-bar .bar-icons ul li a i {
+  font-size: 15px;
+}
+.custom-container .top-bar .bar-icons ul li:nth-child(2) {
+  margin-right: 35px;
+}
+.custom-container .top-bar .text {
+  text-align: center;
+}
+.custom-container .top-bar .language {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.navbar .dropdown .dropdown-menu {
+  display: none;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 48px;
+}
+.navbar .menu {
+  display: flex;
+  align-items: center;
+}
+.navbar .menu #varkala {
+  margin-right: 20px;
+}
+.navbar .menu a {
+  text-decoration: none;
+}
+.navbar .menu .dropdown-menu {
+  display: none;
+  flex-direction: column;
+  position: absolute;
+  background-color: white;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.navbar .menu ul {
+  display: flex;
+  list-style: none;
+}
+.navbar .menu li {
+  margin-right: 20px;
+}
+.navbar .menu li:last-child {
+  margin-right: 0;
+}
+.navbar .search {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 300px;
+}
+.navbar .search input[type=text] {
+  margin-right: 10px;
+  font-size: 20px;
+}
+.navbar .search button {
+  font-size: 20px;
+  opacity: 0.5;
+}
+.navbar .nav-icons ul {
+  list-style: none;
+  padding: 0;
+}
+.navbar .nav-icons ul li {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 20px;
+}
+.navbar .nav-icons ul li:first-child {
+  margin-left: 0;
+}
+.navbar .nav-icons ul li a {
+  text-decoration: none;
+  color: #333;
+}
+
+* a {
+  color: black;
+}
+
+.information {
+  margin-left: 320px;
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.information .customer-zone {
+  font-weight: 800;
+  font-size: 50px;
+}
+
+.register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+.register .register-left {
+  width: 375px;
+  height: 525px;
+  color: whitesmoke;
+  border-radius: 10px;
+  border: 3px solid whitesmoke;
+  box-shadow: 2px solid whitesmoke;
+  margin-top: 50px;
+  margin-right: 250px;
+  margin-left: 300px;
+}
+.register .register-left .login {
+  color: black;
+  background-color: #868e96;
+  height: 65px;
+  width: 370px;
+  border-radius: 8px;
+}
+.register .register-left .login h3 {
+  margin-left: 40px;
+  position: relative;
+  top: 20px;
+}
+.register .card-body {
+  background-color: white;
+}
+.register .card-body .text {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  color: black;
+  margin-left: 20px;
+  margin-top: 40px;
+}
+.register .card-body .text h6 {
+  color: #868e96;
+}
+.register .card-body .email {
+  margin-left: 20px;
+  margin-top: 30px;
+}
+.register .card-body .email h4 {
+  color: black;
+}
+.register .card-body .email .password {
+  margin-top: 20px;
+}
+.register .card-body .email button {
+  background-color: black;
+  color: white;
+  width: 124px;
+  height: 35px;
+  margin-top: 10px;
+  transition: 0.5s;
+}
+.register .card-body .email button:hover {
+  opacity: 80%;
+}
+.register .card-body .email button i {
+  margin-right: 80px;
+  margin-top: 10px;
+}
+.register .card-body .email button p {
+  position: relative;
+  bottom: 17px;
+}
+.register .card-body .email input {
+  width: 300px;
+  height: 40px;
+}
+
+.register-right {
+  width: 375px;
+  height: 525px;
+  color: whitesmoke;
+  border-radius: 10px;
+  border: 3px solid whitesmoke;
+  box-shadow: 2px solid whitesmoke;
+  margin-top: 50px;
+  margin-right: 490px;
+}
+.register-right .login {
+  color: black;
+  background-color: #868e96;
+  height: 65px;
+  width: 370px;
+  border-radius: 8px;
+}
+.register-right .login h3 {
+  margin-left: 40px;
+  position: relative;
+  top: 20px;
+}
+
+.card-body {
+  background-color: white;
+}
+.card-body .text {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+  color: black;
+  margin-left: 20px;
+  margin-top: 40px;
+}
+.card-body .text h6 {
+  color: #868e96;
+  font-size: 15px;
+}
+.card-body .email {
+  margin-left: 20px;
+  margin-top: 30px;
+}
+.card-body .email h4 {
+  color: black;
+}
+.card-body .email .password {
+  margin-top: 20px;
+}
+.card-body .email button {
+  background-color: black;
+  color: white;
+  width: 124px;
+  height: 35px;
+  margin-top: 10px;
+  transition: 0.5s;
+}
+.card-body .email button:hover {
+  opacity: 80%;
+}
+.card-body .email button i {
+  margin-right: 80px;
+  margin-top: 10px;
+}
+.card-body .email button p {
+  position: relative;
+  bottom: 17px;
+}
+.card-body .email input {
+  width: 300px;
+  height: 40px;
+}
+.card-body h3 {
+  color: black;
+  position: relative;
+  top: 10px;
+}
+
+.about {
+  background-color: #f8f9fa !important;
+  width: 100%;
+  height: 200px;
+  margin-top: 150px;
+}
+.about .icons i {
+  margin-top: 90px;
+  margin-left: 400px;
+}
+.about .icons i p {
+  position: relative;
+  bottom: 30px;
+  left: 40px;
+}
+.about .icons i span {
+  color: #868e96;
+  position: relative;
+  bottom: 15px;
+  left: 38px;
+}/*# sourceMappingURL=login.css.map */
