@@ -4,180 +4,460 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="about.css">
+
+    <title>Document</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-
-    <title>Document</title>
+    <link rel="stylesheet" href="about.css">
 </head>
 
 <body>
+
     <header>
-        <div class="custom-container">
-            <div class="top-bar">
-                <div class="bar-icons">
-                    <ul>
-                        <li><a href="#"><i class="fa-brands fa-facebook-f"></i></a></li>
-                        <li><a href="#"><i class="fa-brands fa-twitter"></i></a></li>
-                        <li><i class="fa-solid fa-phone"></i> 020-800-456-747</li>
-                    </ul>
-                </div>
-                <div class="text">
-                    <p>Free in-store delivery</p>
-                </div>
-                <div class="language">
-                    <a href="#">English</a>
-                    <!-- <div>
-                        <a href="#">German</a>
-                        <a href="#">French</a>
-                    </div> -->
-                </div>
+        <div class="header-cnt h-[54px] flex justify-between items-center py-3 px-12 bg-[#e9ecef]">
+            <div class="left flex">
+                <div class="fb  mr-3"><i class="fa-brands fa-facebook-f"></i></div>
+                <div class="twt mr-7"><i class="fa-brands fa-twitter"></i></div>
+                <div class="phone"><i class="fa-solid fa-phone mr-2"></i><span>020-800-456-747</span></div>
             </div>
-        </div>
-        <div class="navbar">
-            <div class="menu">
-                <a href="#" id="varkala">Varkala</a>
-                <ul>
-                    <li class="dropdown">
-                        <a href="#">Home</a>
-                        <button><i class="fa-solid fa-angle-up"></i></button>
-                        <div class="dropdown-menu">
-                            <a href="#">Home 1 - Fashion</a>
-                            <a href="#">Home 2 - Fashion</a>
-                            <a href="#">Home 3 - Desing</a>
-                            <a href="#">Home 4 - Desing</a>
+            <div class="center flex"><span class="text-[15px]">Free in-store delivery</span></div>
+            <div class="right flex">
+                <div class="language relative mt-1">
+                    <div class="button-container flex justify-center items-center mr-[35px]">                    
+                        <button id="dropdownDelayButton" data-dropdown-toggle="dropdownDelay" data-dropdown-delay="500" data-dropdown-trigger="hover" class="group hover:text-yellow-500 focus:outline-none flex justify-center items-center gap-1" type="button"><a href="#" class="text-[14px] mt-1">English</a><i class="fa-solid fa-chevron-down"></i></button>
+                        <div id="dropdownDelay" class="absolute flex justify-end hidden mt-2 bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
+                            <ul class="py-2 text-sm text-gray-700">
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">German</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">French</a>
+                                </li>
+                            </ul>
                         </div>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#">Shop</a>
-                        <button><i class="fa-solid fa-angle-up"></i></button>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#">Icons</a>
-                        <button><i class="fa-solid fa-angle-up"></i></button>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#">Pages</a>
-                        <button><i class="fa-solid fa-angle-up"></i></button>
-                    </li>
-                    <li class="dropdown">
-                        <a href="#">Docs</a>
-                        <button><i class="fa-solid fa-angle-up"></i></button>
-                        <div class="dropdown-menu">
-                            <a href="#">Introduction</a>
-                            <a href="#">Directory structure</a>
-                            <a href="#">Gulp</a>
-                            <a href="#">Customuzing CSS</a>
-                            <a href="#">Credits</a>
-                            <a href="#">Changelog</a>
-                            <a href="#">Bootstrap</a>
-                            <a href="#">Theme</a>
+                    </div>               
+                </div>
+                <div class="currency mt-1">
+                    <div class="button-container relative">                    
+                        <button id="dropdownCurrency" data-dropdown-toggle="dropdownDelay" data-dropdown-delay="500" data-dropdown-trigger="hover" class="hover:text-yellow-500 " type="button">USD <i class="fa-solid fa-chevron-down"></i></button>
+    
+                        <div id="dropdownDelayCurrency" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg absolute shadow w-44 dark:bg-gray-700">
+                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDelayButton">
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">EUR</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">GPB</a>
+                                </li>
+                            </ul>
                         </div>
-                    </li>
-                </ul>
-            </div>
-            <div class="search">
-                <input type="text" placeholder="Search">
-                <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-            </div>
-            <div class="nav-icons">
-                <ul>
-                    <li><a href="#"><i class="fa-solid fa-user"></i></a></li>
-                    <li><a href="#"><i class="fa-regular fa-heart"></i></a></li>
-                    <li><a href="#"><i class="fa-solid fa-bag-shopping"></i></a></li>
-                    <li><a href="#"><i class="fa-solid fa-bars-staggered"></i></a></li>
-                </ul>
+                    </div>
+                  
+                </div>
             </div>
         </div>
     </header>
+    <body>
+        <div class="section-1">
+            <div class="top">
+                <div class="top-container flex justify-between items-center px-12 mt-[20px]">
+                    <div class="left flex text-[16px]">
+                        <button class="mr-6"><span class="font-medium">Varkala</span></button>
+                        <button class="mr-4 flex gap-1"><span>Home</span><i class="fa-solid fa-chevron-down mt-2 text-[10px]"></i></button>
+                        <button class="mr-4 gap-1 text-[rgba(0,0,0,0.5)]"><span>Shop</span><i class="fa-solid fa-chevron-down"></i></button>
+                        <button class="mr-4 gap-1 text-[rgba(0,0,0,0.5)]"><span>Icons</span><i class="fa-solid fa-chevron-down"></i></button>
+                        <button class="mr-4 gap-1 text-[rgba(0,0,0,0.5)]"><span>Pages</span><i class="fa-solid fa-chevron-down"></i></button>
+                        <button class="mr-4 gap-1 text-[rgba(0,0,0,0.5)]"><span>Docs</span><i class="fa-solid fa-chevron-down"></i></button>
+                    </div>
+                    <div class="center">
+                        <div class="flex justify-center items-center search-container border-b-2 border-grey w-[260px] h-[40px] ">
+                            <input class="w-[184px] h-[30px] border-none" type="text" placeholder="Search">
+                            <i class="fa-solid fa-magnifying-glass text-[19px]"></i>
+                        </div>
+                    </div>
+                    <div class="right flex">
+                        <div class="right-container flex gap-[20px] items-center">
+                            <a href="#"><i class="fa-regular fa-user"></i></a>
+                            <a href="#" class="relative"><i class="fa-regular fa-heart"></i>
+                                <div class="notification absolute left-0 bottom-[15px] bg-[#bcac76] rounded-full h-[20px] w-[20px] flex justify-center items-center mx-[14px]"><span class="text-[13px] text-white">3</span></div>
+                            </a>
+                            <a href="#" class="relative"><i class="fa-solid fa-bag-shopping"></i>
+                                <div class="notification absolute left-0 bottom-[15px] bg-[#bcac76] rounded-full h-[20px] w-[20px] flex justify-center items-center mx-[14px]"><span class="text-[13px] text-white">5</span></div>
+                            </a>
+                            <a href="#"><i class="fa-solid fa-bars"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    <main class="indexmain">
+        <section class="mx-[190px]">
+            <div class="py-[96px] px-[15px] flex">
+                <div class="w-[80px] h-[1px] bg-black"></div>
+                <div class="w-[540px] h-[355px] ml-[120px]">
+                    <h6 class="font-semibold text-2xl text-[#BCAC76] mb-[20px] font-mono">ABOUT US</h6>
+                    <h1 class="text-7xl font-bold mb-[70px]">We are Varkala</h1>
+                    <p class="text-lg font-semibold text-[#868E96]">One morning, when Gregor Samsa woke from troubled
+                        dreams, he found himself transformed in his bed
+                        into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he
+                        could see his brown belly, slightly domed and divided by arches into stiff sections</p>
+                </div>
+            </div>
+            <div class="history-varkala">
+                <div class="py-[96px] px-[15px] flex">
+                    <div class="w-[80px] h-[1px] bg-black"></div>
+                    <div class="ml-[120px]">
+                        <h6 class="font-semibold text-2xl text-[#BCAC76] mb-[20px] font-mono"> THE OLD TIMES</h6>
+                        <h1 class="text-7xl font-bold mb-[70px]">History of Varkala</h1>
+                    </div>
+                </div>
+                <div class="flex relative">
+                    <div>
+                        <img class="w-[350px] h-[525px]"
+                            src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/photo/raoul-ortega-2JtF6pYAOOI-unsplash.jpg"
+                            alt="photo">
+                    </div>
+                    <div class="w-[540px] h-[535px] ml-[95px]">
+                        <div class="absolute top-[200px]">
+                            <h6 class="text-[#868E96] font-mono font-bold text-3xl ">Humble beginnings</h6>
+                            <h2 class="text-4xl font-bold mb-[30px]">We started as little</h2>
+                            <p class="text-[#868E96] text-lg w-[540px]">The bedding was hardly able to cover it and
+                                seemed ready to slide off any moment. His
+                                many legs, pitifully thin compared with the size of the rest of him, waved about
+                                helplessly as he looked. "What's happened to me?" he thought. It wasn't a dream.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="flex relative mb-[100px]">
+                    <div class="w-[540px] h-[535px]">
+                        <div class="absolute top-[200px]">
+                            <h6 class="text-[#868E96] font-mono font-bold text-3xl ">VARKALA TODAY</h6>
+                            <h2 class="text-4xl font-bold mb-[30px]">And then we grew a bit</h2>
+                            <p class="text-[#868E96] text-lg w-[540px] h-[102px]">The bedding was hardly able to cover
+                                it and seemed ready to slide off any moment. His
+                                many legs, pitifully thin compared with the size of the rest of him, waved about
+                                helplessly as he looked. "What's happened to me?" he thought. It wasn't a dream.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <img class="w-[445px] ml-[96px] pt-[200px]"
+                            src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/photo/clark-street-mercantile-P3pI6xzovu0-unsplash.jpg"
+                            alt="photo">
+                    </div>
+                </div>
+            </div>
+        </section>
 
-    <div class="Varkala">
-        <h5>ABOUT US</h5>
-        <h1>We are Varkala</h1>
-        <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a
-            horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could see his brown
-            belly, slightly domed and divided by arches into stiff sections</p>
-    </div> <br>
+        <section>
+            <div class=" py-[96px] bg-[#F8F9FA]">
+                <div class="mx-[190px] flex">
+                    <div class="w-[445px] h-[363px] px-[15px]">
+                        <h2 class="text-4xl mb-[30px] font-bold">Varkala's Milestones</h2>
+                        <p class="text-lg font-semibold text-[#868E96]">One morning, when Gregor Samsa woke from
+                            troubled dreams, he found himself transformed in his bed into a horrible vermin. He lay on
+                            his armour-like back, and if he lifted his head a little he could see his brown belly,
+                            slightly domed and divided by arches into stiff sections.</p>
+                    </div>
+                    <div class="w-[570px] h-[363px] ml-auto pr-[70px]">
+                        <div class="flex flex-wrap">
+                            <div class="w-full md:w-1/2 mb-[20px]">
+                                <h4 class="font-mono font-semibold text-3xl mb-[15px]">1995</h4>
+                                <p class="text-[#868E96] text-base mr-[20px] font-semibold mb-[20px]">One morning, when
+                                    Gregor Samsa
+                                    woke from troubled dreams, he found himself transformed in his bed into a horrible
+                                    vermin</p>
+                            </div>
+                            <div class="w-full md:w-1/2 mb-[20px]">
+                                <h4 class="font-mono font-semibold text-3xl mb-[15px]">2000</h4>
+                                <p class="text-[#868E96] text-base mr-[20px] font-semibold mb-[20px]">The bedding was
+                                    hardly able to
+                                    cover it and seemed ready to slide off any moment. His many legs, pitifully thin
+                                    compared</p>
+                            </div>
+                            <div class="w-full md:w-1/2 mb-[20px]">
+                                <h4 class="font-mono font-semibold text-3xl mb-[15px]">2010</h4>
+                                <p class="text-[#868E96] text-base mr-[20px] font-semibold mb-[20px]">His room, a proper
+                                    human room
+                                    although a little too small, lay peacefully between its four familiar walls. A
+                                    collection</p>
+                            </div>
+                            <div class="w-full md:w-1/2 mb-[20px]">
+                                <h4 class="font-mono font-semibold text-3xl mb-[15px]">2018</h4>
+                                <p class="text-[#868E96] text-base mr-[20px] font-semibold">Samsa was a travelling
+                                    salesman - and
+                                    above it there hung a picture that he had recently cut out of an illustrated magaz
+                                </p>
+                            </div>
+                        </div>
+                    </div>
 
-    <div class="varkala-history">
-        <h5>THE OLD TIMES</h5>
-        <h1>History of Varkala</h1>
+                </div>
+            </div>
+        </section>
 
-        <div class="first-image">
-            <img src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/photo/raoul-ortega-2JtF6pYAOOI-unsplash.jpg"
-                alt="" width="350px" height="525px">
-            <div class="texts">
-                <h6>HUMBLE BEGINNINGS</h6>
-                <h2>We started as little</h2>
-                <p>The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs,
-                    pitifully thin compared with the size of the rest of him, waved about helplessly as he looked.
-                    "What's happened to me?" he thought. It wasn't a dream.
+        <section class="mx-[190px]">
+            <div class="flex items-center mb-[50px]">
+                <div class="ml-[50px]">
+                    <div class="w-[349px] h-[349px]">
+                        <img class="rounded-full"
+                            src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/avatar/avatar-0.jpg"
+                            alt="person">
+                    </div>
+                </div>
+                <div class="mt-[100px] ml-[50px]">
+                    <div class="w-[540px] h-[411px]">
+                        <p class="text-3xl font-mono font-semibold mb-[30px]">Samsa was a travelling salesman - and
+                            above it there hung a picture that he had recently cut
+                            out of an illustrated magazine and housed in a nice, gilded frame.</p>
+                        <h6 class="text-2xl text-[#BCAC76] font-semibold mb-[30px]">— FRANKIE KAFKA, FOUNDER</h6>
+                        <p class="text-lg text-[#868E96] font-semibold">Samsa was a travelling salesman - and above it
+                            there hung a picture that he had recently cut
+                            out of an illustrated magazine and housed in a nice, gilded frame.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
 
-                </p>
+        <section class="mx-[190px]">
+            <div class="py-[96px] px-[15px] flex mb-[100px]">
+                <div class="w-[100px] h-[1px] bg-black"></div>
+                <div class=" ml-[120px] flex flex-col">
+                    <h6 class="font-semibold text-2xl text-[#BCAC76] mb-[20px] font-mono">OUR TEAM</h6>
+                    <h1 class="text-7xl font-bold mb-[50px]">People</h1>
+                    <div class="grid grid-cols-4 gap-[30px]">
+                        <div class="w-[160px] text-center m-[15px]">
+                            <img class="rounded-full mb-2"
+                                src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/avatar/avatar-0.jpg"
+                                alt="person">
+                            <h4 class="mt-2">Frankie Kafka</h4>
+                            <p class="text-[#868E96]">CEO & Founder</p>
+                        </div>
+                        <div class="w-[160px] text-center m-[15px]">
+                            <img class="rounded-full mb-2"
+                                src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/avatar/avatar-1.jpg"
+                                alt="person">
+                            <h4 class="mt-2">Brittney Day</h4>
+                            <p class="text-[#868E96]">CTO </p>
+                        </div>
+                        <div class="w-[160px] text-center m-[15px]">
+                            <img class="rounded-full mb-2"
+                                src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/avatar/avatar-2.jpg"
+                                alt="person">
+                            <h4 class="mt-2">Kim Cervantes</h4>
+                            <p class="text-[#868E96]">Marketing </p>
+                        </div>
+                        <div class="w-[160px] text-center m-[15px]">
+                            <img class="rounded-full mb-2"
+                                src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/avatar/avatar-3.jpg"
+                                alt="person">
+                            <h4 class="mt-2">Massey Armstrong</h4>
+                            <p class="text-[#868E96]">Customer care </p>
+                        </div>
+                        <div class="w-[160px] text-center m-[15px]">
+                            <img class="rounded-full mb-2"
+                                src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/avatar/avatar-4.jpg"
+                                alt="person">
+                            <h4 class="mt-2">B.J. Petersen</h4>
+                            <p class="text-[#868E96]">E-commerce </p>
+                        </div>
+                        <div class="w-[160px] text-center m-[15px]">
+                            <img class="rounded-full mb-2"
+                                src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/avatar/avatar-5.jpg"
+                                alt="person">
+                            <h4 class="mt-2">Mayra Holman</h4>
+                            <p class="text-[#868E96]">Customer care </p>
+                        </div>
+                        <div class="w-[160px] text-center m-[15px]">
+                            <img class="rounded-full mb-2"
+                                src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/avatar/avatar-6.jpg"
+                                alt="person">
+                            <h4 class="mt-2">Gabriel Fisher</h4>
+                            <p class="text-[#868E96]">Customer care </p>
+                        </div>
+                        <div class="w-[160px] text-center m-[15px]">
+                            <img class="rounded-full mb-2"
+                                src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/avatar/avatar-7.jpg"
+                                alt="person">
+                            <h4 class="mt-2">Jose Holman</h4>
+                            <p class="text-[#868E96]">Customer care</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="mx-[190px]">
+            <div>
+                <div>
+                    <div>
+                        <h2 class="text-4xl mx-[96px] font-bold text-center mb-[110px] ">At Varkala, we want the right
+                            choice to be as easy as putting on a great T-shirt</h2>
+                    </div>
+                    <div class="flex flex-wrap mb-[150px] mx-[95px]">
+                        <div class="w-1/2 pr-4">
+                            <p class="text-[#868E96]">
+                                One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed
+                                in his
+                                bed into a horrible vermin. He lay on his armour-like back, and if he lifted his head a
+                                little he could see his brown belly, slightly domed and divided by arches into stiff
+                                sections
+                            </p>
+                        </div>
+                        <div class="w-1/2 pl-4">
+                            <p class="text-[#868E96]">
+                                The bedding was hardly able to cover it and seemed ready to slide off any moment. His
+                                many
+                                legs, pitifully thin compared with the size of the rest of him, waved about helplessly
+                                as he
+                                looked. "What's happened to me?" he thought. It wasn't a dream.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="flex items-center justify-center gap-[90px] bg-[#f8f9fa] py-[96px]">
+            <div class="flex items-center gap-[15px]">
+                <i class="fa-solid fa-truck-moving text-2xl"></i>
+                <div>
+                    <h6 class="font-semibold">Free shipping & return</h6>
+                    <p class="text-[#868E96]">Free Shipping over $300</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-[15px]">
+                <i class="fa-solid fa-comments-dollar text-2xl"></i>
+                <div>
+                    <h6 class="font-semibold">Money back guarantee</h6>
+                    <p class="text-[#868E96]">30 Days Money Back Guarantee</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-[15px]">
+                <i class="fa-regular fa-money-bill-1 text-2xl"></i>
+                <div>
+                    <h6 class="font-semibold">Best prices</h6>
+                    <p class="text-[#868E96]">Always the best prices</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-[15px]">
+                <i class="fa-solid fa-headset text-2xl"></i>
+                <div>
+                    <h6 class="font-semibold">020-800-456-747</h6>
+                    <p class="text-[#868E96]">24/7 Available Support</p>
+                </div>
             </div>
         </div>
-        <div class="second-image">
-            <div class="texts">
-                <h6>VARKALA TODAY</h6>
-                <h2>And then we grew a bit</h2>
-                <p>The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs,
-                    pitifully thin compared with the size of the rest of him, waved about helplessly as he looked.
-                    "What's happened to me?" he thought. It wasn't a dream.
 
-                </p>
+        <div class="flex py-[96px] mx-[190px]">
+            <div class="w-[480px] pr-[96px] h-[205px]">
+                <h6 class="text-lg font-semibold mb-[30px]">Be in touch</h6>
+                <p class="mb-[30px] text-[#868E96]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At itaque
+                    temporibus.</p>
+                <form action="#">
+                    <div class="flex border-b-gray-700 border">
+                        <input class="py-[6px] pr-[12px] w-[340px] h-[36px]" type="email"
+                            placeholder="Your Email Address">
+                        <div>
+                            <button><i class="fa-regular fa-envelope text-3xl"></i></button>
+                        </div>
+                    </div>
+                </form>
             </div>
-            <img src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/photo/clark-street-mercantile-P3pI6xzovu0-unsplash.jpg"
-                alt="" width="495px" height="297px">
+            <div>
+                <div class="flex gap-[190px]">
+                    <div>
+                        <h6 class="mb-[25px] font-bold">Shop</h6>
+                        <ul>
+                            <li class="mb-[8px] font-semibold text-[#868E96] group">
+                                <a href="#"
+                                    class="group-hover:border-b-[2px] border-[transparent] hover:border-black transition-all duration-300">For
+                                    Men</a>
+                            </li>
+                            <li class="mb-[8px] font-semibold text-[#868E96] group">
+                                <a href="#"
+                                    class="group-hover:border-b-[2px] border-[transparent] hover:border-black transition-all duration-300">For
+                                    Women</a>
+                            </li>
+                            <li class="mb-[8px] font-semibold text-[#868E96] group">
+                                <a href="#"
+                                    class="group-hover:border-b-[2px] border-[transparent] hover:border-black transition-all duration-300">Stores</a>
+                            </li>
+                            <li class="mb-[8px] font-semibold text-[#868E96] group">
+                                <a href="#"
+                                    class="group-hover:border-b-[2px] border-[transparent] hover:border-black transition-all duration-300">Our
+                                    Blog</a>
+                            </li>
+                            <li class="text-[#868E96] font-semibold group">
+                                <a href="#"
+                                    class="group-hover:border-b-[2px] border-[transparent] hover:border-black transition-all duration-300">Shop</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h6 class="mb-[25px] font-bold">Company</h6>
+                        <ul>
+                            <li class="mb-[8px] font-semibold text-[#868E96] group">
+                                <a href="#"
+                                    class="group-hover:border-b-[2px] border-[transparent] hover:border-black transition-all duration-300">Login</a>
+                            </li>
+                            <li class="mb-[8px] font-semibold text-[#868E96] group">
+                                <a href="#"
+                                    class="group-hover:border-b-[2px] border-[transparent] hover:border-black transition-all duration-300">Register</a>
+                            </li>
+                            <li class="mb-[8px] font-semibold text-[#868E96] group">
+                                <a href="#"
+                                    class="group-hover:border-b-[2px] border-[transparent] hover:border-black transition-all duration-300">Wishlist</a>
+                            </li>
+                            <li class="mb-[8px] font-semibold text-[#868E96] group">
+                                <a href="#"
+                                    class="group-hover:border-b-[2px] border-[transparent] hover:border-black transition-all duration-300">Our
+                                    Products</a>
+                            </li>
+                            <li class="font-semibold text-[#868E96] group">
+                                <a href="#"
+                                    class="group-hover:border-b-[2px] border-[transparent] hover:border-black transition-all duration-300">Checkouts</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h6 class="mb-[25px] font-bold">Your account</h6>
+                        <ul>
+                            <li class="mb-[8px] font-semibold text-[#868E96] group">
+                                <a href="#"
+                                    class="group-hover:border-b-[2px] border-[transparent] hover:border-black transition-all duration-300">Login</a>
+                            </li>
+                            <li class="mb-[8px] font-semibold text-[#868E96] group">
+                                <a href="#"
+                                    class="group-hover:border-b-[2px] border-[transparent] hover:border-black transition-all duration-300">Register</a>
+                            </li>
+                            <li class="mb-[8px] font-semibold text-[#868E96] group">
+                                <a href="#"
+                                    class="group-hover:border-b-[2px] border-[transparent] hover:border-black transition-all duration-300">Wishlist</a>
+                            </li>
+                            <li class="mb-[8px] font-semibold text-[#868E96] group">
+                                <a href="#"
+                                    class="group-hover:border-b-[2px] border-[transparent] hover:border-black transition-all duration-300">Our
+                                    Products</a>
+                            </li>
+                            <li class="font-semibold text-[#868E96] group">
+                                <a href="#"
+                                    class="group-hover:border-b-[2px] border-[transparent] hover:border-black transition-all duration-200">Checkouts</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
         </div>
-    </div>
 
+    </footer>
 
-    <div class="varkala-milestones">
-        <div class="texts">
-            <div class="texts-left">
-                <h2>Varkala's Milestones
-                </h2> <br>
-                <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed
-                    into a horrible vermin. He lay on his armour-like back, and if he lifted his head a little he could
-                    see his brown belly, slightly domed and divided by arches into stiff sections
-
-                </p>
-            </div>
-            <div class="texts-right">
-                <div class="first">
-                    <h4>1995</h4> <br>
-                    <p>One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed
-                        into a horrible vermin</p>
-                </div>
-
-                <div class="second">
-                    <h4>2000</h4> <br>
-                    <p>The bedding was hardly able to cover it and seemed ready to slide off any moment. His many legs,
-                        pitifully thin compared
-
-                    </p>
-                </div>
-
-                <div class="third">
-                    <h4>2010</h4> <br>
-                    <p>
-                        His room, a proper human room although a little too small, lay peacefully between its four familiar walls. A collection
-
-                    </p>
-                </div>
-
-                <div class="fourth">
-                    <h4>2018</h4> <br>
-                    <p>Samsa was a travelling salesman - and above it there hung a picture that he had recently cut out
-                        of an illustrated magaz
-
-                    </p>
-                </div>
-
-            </div>
-        </div>
-    </div>
 </body>
-
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+<script src="https://kit.fontawesome.com/0af7f83e73.js" crossorigin="anonymous"></script>
+<script src="https://cdn.tailwindcss.com"></script>
 </html>

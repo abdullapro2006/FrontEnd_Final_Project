@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <title>Document</title>
+    <link rel="stylesheet" href="blog.css">
+</head>
+
+<body>
+    <header>
+        <div class="header-cnt h-[54px] flex justify-between items-center py-3 px-12 bg-[#e9ecef]">
+            <div class="left flex">
+                <div class="fb  mr-3"><i class="fa-brands fa-facebook-f"></i></div>
+                <div class="twt mr-7"><i class="fa-brands fa-twitter"></i></div>
+                <div class="phone"><i class="fa-solid fa-phone mr-2"></i><span>020-800-456-747</span></div>
+            </div>
+            <div class="center flex"><span class="text-[15px]">Free in-store delivery</span></div>
+            <div class="right flex">
+                <div class="language relative mt-1">
+                    <div class="button-container flex justify-center items-center mr-[35px]">                    
+                        <button id="dropdownDelayButton" data-dropdown-toggle="dropdownDelay" data-dropdown-delay="500" data-dropdown-trigger="hover" class="group hover:text-yellow-500 focus:outline-none flex justify-center items-center gap-1" type="button"><a href="#" class="text-[14px] mt-1">English</a><i class="fa-solid fa-chevron-down"></i></button>
+                        <div id="dropdownDelay" class="absolute flex justify-end hidden mt-2 bg-white divide-y divide-gray-100 rounded-lg shadow w-44">
+                            <ul class="py-2 text-sm text-gray-700">
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">German</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">French</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>               
+                </div>
+                <div class="currency mt-1">
+                    <div class="button-container relative">                    
+                        <button id="dropdownCurrency" data-dropdown-toggle="dropdownDelay" data-dropdown-delay="500" data-dropdown-trigger="hover" class="hover:text-yellow-500 " type="button">USD <i class="fa-solid fa-chevron-down"></i></button>
+    
+                        <div id="dropdownDelayCurrency" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg absolute shadow w-44 dark:bg-gray-700">
+                            <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownDelayButton">
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">EUR</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">GPB</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                  
+                </div>
+            </div>
+        </div>
+    </header>
+    <body>
+        <div class="section-1">
+            <div class="top">
+                <div class="top-container flex justify-between items-center px-12 mt-[20px]">
+                    <div class="left flex text-[16px]">
+                        <button class="mr-6"><span class="font-medium">Varkala</span></button>
+                        <button class="mr-4 flex gap-1"><span>Home</span><i class="fa-solid fa-chevron-down mt-2 text-[10px]"></i></button>
+                        <button class="mr-4 gap-1 text-[rgba(0,0,0,0.5)]"><span>Shop</span><i class="fa-solid fa-chevron-down"></i></button>
+                        <button class="mr-4 gap-1 text-[rgba(0,0,0,0.5)]"><span>Icons</span><i class="fa-solid fa-chevron-down"></i></button>
+                        <button class="mr-4 gap-1 text-[rgba(0,0,0,0.5)]"><span>Pages</span><i class="fa-solid fa-chevron-down"></i></button>
+                        <button class="mr-4 gap-1 text-[rgba(0,0,0,0.5)]"><span>Docs</span><i class="fa-solid fa-chevron-down"></i></button>
+                    </div>
+                    <div class="center">
+                        <div class="flex justify-center items-center search-container border-b-2 border-grey w-[260px] h-[40px] ">
+                            <input class="w-[184px] h-[30px] border-none" type="text" placeholder="Search">
+                            <i class="fa-solid fa-magnifying-glass text-[19px]"></i>
+                        </div>
+                    </div>
+                    <div class="right flex">
+                        <div class="right-container flex gap-[20px] items-center">
+                            <a href="#"><i class="fa-regular fa-user"></i></a>
+                            <a href="#" class="relative"><i class="fa-regular fa-heart"></i>
+                                <div class="notification absolute left-0 bottom-[15px] bg-[#bcac76] rounded-full h-[20px] w-[20px] flex justify-center items-center mx-[14px]"><span class="text-[13px] text-white">3</span></div>
+                            </a>
+                            <a href="#" class="relative"><i class="fa-solid fa-bag-shopping"></i>
+                                <div class="notification absolute left-0 bottom-[15px] bg-[#bcac76] rounded-full h-[20px] w-[20px] flex justify-center items-center mx-[14px]"><span class="text-[13px] text-white">5</span></div>
+                            </a>
+                            <a href="#"><i class="fa-solid fa-bars"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    <main class="indexmain">
+        <section class="px-[190px]">
+            <div class="relative">
+                <img class="ml-[48px] mt-[40px] w-[1060px] h-[530px]"
+                    src="https://demo.bootstrapious.com/varkala/1-2-1/img/photo/chris-murray-YGzEX5yLKeA-unsplash.jpg"
+                    alt="photo">
+                <div class="absolute top-[50%] left-0 w-full text-center transform -translate-y-1/2">
+                    <div class="flex justify-center mb-[30px]">
+                        <a href="#">
+                            <h2 class="text-xl text-[#BCAC76] hover:border-b-2 border-yellow-600 hover:text-[#837246] ">
+                                Home</h2>
+                        </a>
+                        <h2 class="text-xl text-[#868E96] mx-2">Blog</h2>
+                    </div>
+                    <h1 class="text-6xl font-bold text-white">Blog</h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="px-[190px] mb-[900px]">
+            <div class="flex">
+                <div class="mt-[50px]">
+                    <div class="px-[48px] mb-[48px]">
+                        <a href="#"><img class="w-[306px] h-[204px]"
+                                src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/blog/christopher-campbell-28571-unsplash.jpg"
+                                alt="person"></a>
+                        <h5 class="text-xl font-bold my-[10px]">Pellentesque habitant morbi</h5>
+                        <p class="text-[#ADB5BD] text-base font-semibold"><a
+                                class="text-[#BCAC76] hover:border-b-2 border-yellow-600 hover:text-[#837246]"
+                                href="#">Fashion and style </a> January 16, 2019</p>
+                    </div>
+                </div>
+                <div class="mt-[50px]">
+                    <div class="px-[48px] mb-[48px]">
+                        <a href="#"><img class="w-[306px] h-[306px]"
+                                src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/blog/kyle-loftus-596319-unsplash-cropped-2.jpg"
+                                alt="person"></a>
+                        <h5 class="text-xl font-bold my-[10px]">Best books about Fashion </h5>
+                        <p class="text-[#ADB5BD] text-base font-semibold"><a
+                                class="text-[#BCAC76] hover:border-b-2 border-yellow-600 hover:text-[#837246]"
+                                href="#">Fashion and style </a> January 16, 2019</p>
+                    </div>
+                </div>
+                <div class="mt-[50px]">
+                    <div class="px-[48px] mb-[48px]">
+                        <a href="#"><img class="w-[306px] h-[205px]"
+                                src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/blog/ian-dooley-347962-unsplash.jpg"
+                                alt="person"></a>
+                        <h5 class="text-xl font-bold my-[10px]">Best books about Fashion </h5>
+                        <p class="text-[#ADB5BD] text-base font-semibold"><a
+                                class="text-[#BCAC76] hover:border-b-2 border-yellow-600 hover:text-[#837246]"
+                                href="#">Fashion and style </a> January 16, 2019</p>
+                    </div>
+                </div>
+            </div>
+            <div class="flex relative">
+                <div class="mt-[50px] absolute  bottom-[-220px]">
+                    <div class="px-[48px] mb-[48px]">
+                        <a href="#"><img class="w-[306px] h-[205px]"
+                                src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/blog/photo-1534126511673-b6899657816a.jpg"
+                                alt="person"></a>
+                        <h5 class="text-xl font-bold my-[10px]">Best books about Fashion </h5>
+                        <p class="text-[#ADB5BD] text-base font-semibold"><a
+                                class="text-[#BCAC76] hover:border-b-2 border-yellow-600 hover:text-[#837246]"
+                                href="#">Fashion and style </a> January 16, 2019</p>
+                    </div>
+                </div>
+                <div class="mt-[50px] absolute right-[370px] bottom-[-340px]">
+                    <div class="px-[48px] mb-[48px]">
+                        <a href="#"><img class="w-[306px] h-[204px]"
+                                src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/blog/rahul-anil-214671-unsplash.jpg"
+                                alt="person"></a>
+                        <h5 class="text-xl font-bold my-[10px]">Best books about Fashion </h5>
+                        <p class="text-[#ADB5BD] text-base font-semibold"><a
+                                class="text-[#BCAC76] hover:border-b-2 border-yellow-600 hover:text-[#837246]"
+                                href="#">Fashion and style </a> January 16, 2019</p>
+                    </div>
+                </div>
+                <div class="mt-[50px] absolute right-0 bottom-[-390px]">
+                    <div class="px-[48px] mb-[48px]">
+                        <a href="#"><img class="w-[306px] h-[354px]"
+                                src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/blog/averie-woodard-319832-unsplash-cropped.jpg"
+                                alt="person"></a>
+                        <h5 class="text-xl font-bold my-[10px]">Best books about Fashion </h5>
+                        <p class="text-[#ADB5BD] text-base font-semibold"><a
+                                class="text-[#BCAC76] hover:border-b-2 border-yellow-600 hover:text-[#837246]"
+                                href="#">Fashion and style </a> January 16, 2019</p>
+                    </div>
+                </div>
+            </div>
+            <div class="relative flex">
+                <div class="mt-[50px] absolute top-[180px]">
+                    <div class="px-[48px] mb-[48px]">
+                        <a href="#"><img class="w-[306px] h-[205px]"
+                                src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/blog/ian-dooley-347942-unsplash.jpg"
+                                alt="person"></a>
+                        <h5 class="text-xl font-bold my-[10px]">Best books about Fashion </h5>
+                        <p class="text-[#ADB5BD] text-base font-semibold"><a
+                                class="text-[#BCAC76] hover:border-b-2 border-yellow-600 hover:text-[#837246]"
+                                href="#">Fashion and style </a> January 16, 2019</p>
+                    </div>
+                </div>
+                <div class="mt-[50px] absolute right-[370px] top-[300px] ">
+                    <div class="px-[48px] mb-[48px]">
+                        <a href="#"><img class="w-[306px] h-[204px]"
+                                src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/blog/christopher-campbell-28571-unsplash.jpg"
+                                alt="person"></a>
+                        <h5 class="text-xl font-bold my-[10px]">Best books about Fashion </h5>
+                        <p class="text-[#ADB5BD] text-base font-semibold"><a
+                                class="text-[#BCAC76] hover:border-b-2 border-yellow-600 hover:text-[#837246]"
+                                href="#">Fashion and style </a> January 16, 2019</p>
+                    </div>
+                </div>
+                <div class="mt-[50px] absolute right-0 top-[360px]">
+                    <div class="px-[48px] mb-[48px]">
+                        <a href="#"><img class="w-[306px] h-[205px]"
+                                src="https://d19m59y37dris4.cloudfront.net/varkala/1-2-1/img/blog/ian-dooley-347962-unsplash.jpg"
+                                alt="person"></a>
+                        <h5 class="text-xl font-bold my-[10px]">Best books about Fashion </h5>
+                        <p class="text-[#ADB5BD] text-base font-semibold"><a
+                                class="text-[#BCAC76] hover:border-b-2 border-yellow-600 hover:text-[#837246]"
+                                href="#">Fashion and style </a> January 16, 2019</p>
+                    </div>
+                </div>
+            </div>
+            <ul class="relative mx-[50px]">
+                <li class="absolute top-[750px] left-0">
+                    <a class="text-[#868E96] hover:text-black duration-300" href="#">
+                        <i class="fa-solid fa-angle-left"></i>
+                        Older posts
+                    </a>
+                </li>
+                <li class="absolute top-[750px] right-0">
+                    <a class="text-[#868E96] hover:text-black duration-300" href="#">
+                        Newer posts
+                        <i class="fa-solid fa-angle-right"></i>
+                    </a>
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <div class="flex items-center justify-center gap-[90px] bg-[#f8f9fa] py-[96px]">
+            <div class="flex items-center gap-[15px]">
+                <i class="fa-solid fa-truck-moving text-2xl"></i>
+                <div>
+                    <h6 class="font-semibold">Free shipping & return</h6>
+                    <p class="text-[#868E96]">Free Shipping over $300</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-[15px]">
+                <i class="fa-solid fa-comments-dollar text-2xl"></i>
+                <div>
+                    <h6 class="font-semibold">Money back guarantee</h6>
+                    <p class="text-[#868E96]">30 Days Money Back Guarantee</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-[15px]">
+                <i class="fa-regular fa-money-bill-1 text-2xl"></i>
+                <div>
+                    <h6 class="font-semibold">Best prices</h6>
+                    <p class="text-[#868E96]">Always the best prices</p>
+                </div>
+            </div>
+            <div class="flex items-center gap-[15px]">
+                <i class="fa-solid fa-headset text-2xl"></i>
+                <div>
+                    <h6 class="font-semibold">020-800-456-747</h6>
+                    <p class="text-[#868E96]">24/7 Available Support</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="flex py-[96px] mx-[190px]">
+            <div class="w-[480px] pr-[96px] h-[205px]">
+                <h6 class="text-lg font-semibold mb-[30px]">Be in touch</h6>
+                <p class="mb-[30px] text-[#868E96]">Lorem ipsum dolor sit amet, consectetur adipisicing elit. At itaque
+                    temporibus.</p>
+                <form action="#">
+                    <div class="flex border-b-gray-700 border">
+                        <input class="py-[6px] pr-[12px] w-[340px] h-[36px]" type="email"
+                            placeholder="Your Email Address">
+                        <div>
+                            <button><i class="fa-regular fa-envelope text-3xl"></i></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div>
+                <div class="flex gap-[190px]">
+                    <div>
+                        <h6 class="mb-[25px] font-bold">Shop</h6>
+                        <ul>
+                            <li class="mb-[8px] font-semibold text-[#868E96] group">
+                                <a href="#"
+                                    class="group-hover:border-b-[2px] border-[transparent] hover:border-black transition-all duration-300">For
+                                    Men</a>
+                            </li>
+                            <li class="mb-[8px] font-semibold text-[#868E96] group">
+                                <a href="#"
+                                    class="group-hover:border-b-[2px] border-[transparent] hover:border-black transition-all duration-300">For
+                                    Women</a>
+                            </li>
+                            <li class="mb-[8px] font-semibold text-[#868E96] group">
+                                <a href="#"
+                                    class="group-hover:border-b-[2px] border-[transparent] hover:border-black transition-all duration-300">Stores</a>
+                            </li>
+                            <li class="mb-[8px] font-semibold text-[#868E96] group">
+                                <a href="#"
+                                    class="group-hover:border-b-[2px] border-[transparent] hover:border-black transition-all duration-300">Our
+                                    Blog</a>
+                            </li>
+                            <li class="text-[#868E96] font-semibold group">
+                                <a href="#"
+                                    class="group-hover:border-b-[2px] border-[transparent] hover:border-black transition-all duration-300">Shop</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h6 class="mb-[25px] font-bold">Company</h6>
+                        <ul>
+                            <li class="mb-[8px] font-semibold text-[#868E96] group">
+                                <a href="#"
+                                    class="group-hover:border-b-[2px] border-[transparent] hover:border-black transition-all duration-300">Login</a>
+                            </li>
+                            <li class="mb-[8px] font-semibold text-[#868E96] group">
+                                <a href="#"
+                                    class="group-hover:border-b-[2px] border-[transparent] hover:border-black transition-all duration-300">Register</a>
+                            </li>
+                            <li class="mb-[8px] font-semibold text-[#868E96] group">
+                                <a href="#"
+                                    class="group-hover:border-b-[2px] border-[transparent] hover:border-black transition-all duration-300">Wishlist</a>
+                            </li>
+                            <li class="mb-[8px] font-semibold text-[#868E96] group">
+                                <a href="#"
+                                    class="group-hover:border-b-[2px] border-[transparent] hover:border-black transition-all duration-300">Our
+                                    Products</a>
+                            </li>
+                            <li class="font-semibold text-[#868E96] group">
+                                <a href="#"
+                                    class="group-hover:border-b-[2px] border-[transparent] hover:border-black transition-all duration-300">Checkouts</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h6 class="mb-[25px] font-bold">Your account</h6>
+                        <ul>
+                            <li class="mb-[8px] font-semibold text-[#868E96] group">
+                                <a href="#"
+                                    class="group-hover:border-b-[2px] border-[transparent] hover:border-black transition-all duration-300">Login</a>
+                            </li>
+                            <li class="mb-[8px] font-semibold text-[#868E96] group">
+                                <a href="#"
+                                    class="group-hover:border-b-[2px] border-[transparent] hover:border-black transition-all duration-300">Register</a>
+                            </li>
+                            <li class="mb-[8px] font-semibold text-[#868E96] group">
+                                <a href="#"
+                                    class="group-hover:border-b-[2px] border-[transparent] hover:border-black transition-all duration-300">Wishlist</a>
+                            </li>
+                            <li class="mb-[8px] font-semibold text-[#868E96] group">
+                                <a href="#"
+                                    class="group-hover:border-b-[2px] border-[transparent] hover:border-black transition-all duration-300">Our
+                                    Products</a>
+                            </li>
+                            <li class="font-semibold text-[#868E96] group">
+                                <a href="#"
+                                    class="group-hover:border-b-[2px] border-[transparent] hover:border-black transition-all duration-200">Checkouts</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </footer>
+</body>
+<script src="https://cdn.tailwindcss.com"></script>
+<script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+<script src="https://kit.fontawesome.com/0af7f83e73.js" crossorigin="anonymous"></script>
+</html>

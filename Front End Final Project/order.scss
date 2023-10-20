@@ -1,0 +1,267 @@
+@import "_header.scss";
+
+
+
+header {
+    .custom-container {
+      .top-bar {
+        .bar-icons {
+          ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            li {
+              display: inline-block;
+              margin-right: 10px;
+  
+              a {
+                text-decoration: none;
+              }
+  
+              i.fa-brands {
+                font-size: 20px;
+  
+                &.fa-facebook-f {
+                  // Styles for the Facebook icon
+                }
+  
+                &.fa-twitter {
+                  // Styles for the Twitter icon
+                }
+              }
+  
+              i.fa-solid.fa-phone {
+                // Styles for the phone icon
+                font-size: 16px;
+                vertical-align: middle;
+                margin-right: 5px;
+              }
+            }
+          }
+        }
+        .text {
+          p {
+            // Styles for "Free in-store delivery"
+            margin: 0;
+            font-weight: bold;
+          }
+        }
+        .language {
+          a {
+            text-decoration: none;
+            // Styles for the language link
+          }
+        }
+      }
+    }
+  
+    ul.menu {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      li.menu-item {
+        display: inline-block;
+        margin-right: 20px;
+  
+        a.menu-link {
+          text-decoration: none;
+          // Styles for menu items
+          font-weight: bold;
+          color: #333;
+  
+          &:hover {
+            color: #555;
+          }
+        }
+  
+        i.fas.fa-chevron-up.arrow {
+          // Styles for the up arrow icon
+          font-size: 14px;
+          margin-left: 5px;
+        }
+  
+        ul.submenu {
+          list-style: none;
+          padding: 0;
+          margin: 0;
+          li {
+            a {
+              text-decoration: none;
+              // Styles for sub-menu items
+              display: block;
+              padding: 5px 0;
+              color: #666;
+  
+              &:hover {
+                color: #888;
+              }
+            }
+          }
+        }
+      }
+    }
+  
+    .mega-menu {
+      &.menu__shop,
+      &.menu__icon {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: #fff;
+        border: 1px solid #ddd;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+        z-index: 100%;
+        width: 100%;
+        padding: 20px;
+  
+        .container {
+          .row {
+            .col-xxl-4 {
+              .menu-categories {
+                h3 {
+                  // Styles for category titles
+                  font-size: 18px;
+                  font-weight: bold;
+                }
+  
+                ul {
+                  list-style: none;
+                  padding: 0;
+                  margin: 0;
+                  li {
+                    a {
+                      text-decoration: none;
+                      // Styles for category items
+                      display: block;
+                      padding: 5px 0;
+                      color: #444;
+  
+                      &:hover {
+                        color: #666;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+  
+        .row {
+          .col-xxl-12 {
+            .row {
+              .col-xxl-2 {
+                .d-flex.flex-column.align-items-center.link__icon {
+                  img {
+                    // Styles for icon images
+                    max-width: 64px;
+                  }
+  
+                  a {
+                    text-decoration: none;
+                    // Styles for icon labels
+                    color: #444;
+  
+                    &:hover {
+                      color: #666;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+  
+        div[style="background-color:#bcac76;"].p-3.text-center {
+          background-color: #bcac76;
+          color: #fff;
+          padding: 10px;
+          text-align: center;
+          font-weight: bold;
+        }
+      }
+    }
+  
+    &.menu__pages {
+      .container {
+        .row {
+          .col-xxl-3 {
+            .menu-categories {
+              img {
+                // Styles for menu category images
+                max-width: 100%;
+                height: auto;
+              }
+  
+              h6.mt-3 {
+                // Styles for category titles
+                font-size: 18px;
+                font-weight: bold;
+              }
+  
+              ul {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+                li {
+                  a {
+                    text-decoration: none;
+                    // Styles for category items
+                    display: block;
+                    padding: 5px 0;
+                    color: #444;
+  
+                    &:hover {
+                      color: #666;
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  
+    .flex.items-center.ml-10 {
+      input.w-184.h-30.border-none {
+        // Styles for the search input field
+        width: 184px;
+        height: 30px;
+        border: none;
+        padding: 5px;
+      }
+  
+      div.p-2 {
+        button.text-xl.border-none {
+          i.fa-solid.fa-magnifying-glass {
+            // Styles for the search button
+            font-size: 24px;
+          }
+        }
+      }
+    }
+  
+    ul.flex.items-center.justify-end.space-x-4.ml-5 {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      li {
+        display: inline-block;
+        margin-right: 10px;
+        a {
+          text-decoration: none;
+          // Styles for user, heart, shopping bag, and bars icons
+          font-size: 20px;
+          color: #888;
+  
+          &:hover {
+            color: #BCAC76;
+          }
+        }
+      }
+    }
+  }
+  
+
